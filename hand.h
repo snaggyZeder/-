@@ -9,6 +9,7 @@ private:
 protected:
 	std::vector<Card> m_hand;
 public:
+	
 	enum GameStatus {
 		GAME_CONTINUE,
 		WIN_,
@@ -20,4 +21,5 @@ public:
 	void printHand();
 	unsigned int calculateScore();
 	GameStatus checkGameStatus();
+	int cleanHand(Card&);
 };

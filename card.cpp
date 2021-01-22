@@ -11,45 +11,58 @@ Card::Card(CardRank f_rank, CardSuits f_suit) {
 	m_suit = f_suit;
 }
 void Card::print_card() {
-	switch (m_rank) {
-	case  CARD_2: cout << 2;
-	case  CARD_3: cout << 3;
-	case  CARD_4: cout << 4;
-	case CARD_5: cout << 5;
-	case CARD_6:  cout << 6;
-	case CARD_7:  cout << 7;
-	case CARD_8: cout << 8;
-	case CARD_9: cout << 9;
-	case CARD_10: cout << 10;
-	case CARD_J: cout << "Ja ";
-	case CARD_Q: cout << "Qu ";
-	case CARD_K: cout << "Ki ";
-	case CARD_A: cout << "A ";
-	}
-	//
-	switch (m_suit){
-	case CARD_DIAMONDS: cout << "D, ";
-	case  CARD_HEARTS: cout << "H,";
-	case CARD_SPADES: cout << "S,";
-	case CARD_CLUBS: cout << "C,";
-}
+	if (m_rank == CARD_2) cout << 2;
+	else
+	if (m_rank == CARD_3) cout << 3;
+	else
+	if (m_rank == CARD_4) cout << 4;
+	else
+	if (m_rank == CARD_5) cout << 5;
+	else
+	if (m_rank == CARD_6) cout << 6;
+	else
+	if (m_rank == CARD_7) cout << 7;
+	else
+	if (m_rank == CARD_8) cout << 8;
+	else
+	if (m_rank == CARD_9) cout << 9;
+	else
+	if (m_rank == CARD_10) cout << 10;
+	else
+	if (m_rank == CARD_J) cout << "Ja ";
+	else
+	if (m_rank == CARD_Q) cout << "Qu ";
+	else
+	if (m_rank == CARD_K) cout << "Ki ";
+	else
+	if (m_rank == CARD_A) cout << "A ";
+	
+	if (m_suit == CARD_DIAMONDS) cout << "D, " ;
+	else
+	if (m_suit == CARD_HEARTS) cout << "H, " ;
+	else
+	if (m_suit == CARD_SPADES) cout << "S, " ;
+	else
+	if (m_suit == CARD_CLUBS) cout << "C, " ;
+	
 }
 
 int Card::get_score() {
+	int score=0;
 	switch (m_rank){
-	case CARD_2: return 2;
-	case CARD_3: return 3;
-	case CARD_4: return 4;
-	case CARD_5: return 5;
-	case CARD_6: return 6;
-	case CARD_7:return 7;
-	case CARD_8: return 8;
-	case CARD_9: return 9;
-	case CARD_10: return 10;
-	case CARD_J: return 10;
-	case CARD_Q: return 10;
-	case CARD_K: return 10;
-	case CARD_A: return 11;
+	case CARD_2:score += 2; return score;
+	case CARD_3:score += 3; return score;
+	case CARD_4:score += 4; return score;
+	case CARD_5:score += 5; return score;
+	case CARD_6:score += 6; return score;
+	case CARD_7:score += 7; return score;
+	case CARD_8:score += 8; return score;
+	case CARD_9:score += 9; return score;
+	case CARD_10:score += 10; return score;
+	case CARD_J:score += 10; return score;
+	case CARD_Q:score += 10; return score;
+	case CARD_K:score += 10; return score;
+	case CARD_A:score += 11; return score;
 }
 }
 

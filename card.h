@@ -9,7 +9,8 @@ public:
 		CARD_DIAMONDS,//áóáíű
 		CARD_HEARTS,//÷ĺđâč
 		CARD_SPADES,//ďčęč
-		CARD_CLUBS,//ęđĺńňč
+		CARD_CLUBS,
+		ZERO_SUITS,//ęđĺńňč
 		MAX_SUITS//ęîíĺö ďĺđĺ÷čńëĺíč˙
 	};
 	enum CardRank {
@@ -26,6 +27,7 @@ public:
 		CARD_Q,//QUEEN - äŕěŕ,11
 		CARD_K,//KING - ęîđîëü,12
 		CARD_A,//ACE - ňóç,13
+		ZERO_RANK,
 		MAX_RANK//ęîíĺö ďĺđĺ÷čńëĺíč˙
 	};
 	Card();

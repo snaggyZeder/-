@@ -20,6 +20,7 @@ void Player::playp(Deck& fDeck) {
 			cout << "Do you want another card?";
 			cout << " (enter your choice, y - yes, n - no) ";
 			cin >> choice;
+			
 		}
 		else if (choice == 'n') { cout << "its final sum " << endl;break;  } 
 		
