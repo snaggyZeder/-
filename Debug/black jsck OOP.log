@@ -1,3 +1,7 @@
-﻿  main.cpp
-C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\main.cpp(149,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+﻿  game.cpp
+C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(69,53): warning C4804: >: небезопасное использование типа "bool" в операции
+C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(73,58): warning C4804: >: небезопасное использование типа "bool" в операции
+C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(78,58): warning C4804: >: небезопасное использование типа "bool" в операции
+  player.cpp
+  Создание кода...
   black jsck OOP.vcxproj -> C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\Debug\black jsck OOP.exe

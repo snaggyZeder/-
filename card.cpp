@@ -1,6 +1,11 @@
-﻿//#include "card.h"
+﻿#include "card.h"
 #include <iostream>
 #include "card.h"
+#include <io.h>
+#include <fcntl.h>
+
+
+
 using namespace std;
 Card::Card() {
 	m_suit = CARD_DIAMONDS;
@@ -11,45 +16,33 @@ Card::Card(CardRank f_rank, CardSuits f_suit) {
 	m_suit = f_suit;
 }
 void Card::print_card() {
-	if (m_rank == CARD_2) cout << 2;
-	else
-	if (m_rank == CARD_3) cout << 3;
-	else
-	if (m_rank == CARD_4) cout << 4;
-	else
-	if (m_rank == CARD_5) cout << 5;
-	else
-	if (m_rank == CARD_6) cout << 6;
-	else
-	if (m_rank == CARD_7) cout << 7;
-	else
-	if (m_rank == CARD_8) cout << 8;
-	else
-	if (m_rank == CARD_9) cout << 9;
-	else
-	if (m_rank == CARD_10) cout << 10;
-	else
-	if (m_rank == CARD_J) cout << "Ja ";
-	else
-	if (m_rank == CARD_Q) cout << "Qu ";
-	else
-	if (m_rank == CARD_K) cout << "Ki ";
-	else
-	if (m_rank == CARD_A) cout << "A ";
-	
-	if (m_suit == CARD_DIAMONDS) cout << "D, " ;
-	else
-	if (m_suit == CARD_HEARTS) cout << "H, " ;
-	else
-	if (m_suit == CARD_SPADES) cout << "S, " ;
-	else
-	if (m_suit == CARD_CLUBS) cout << "C, " ;
-	
+	switch (m_rank) {
+	case  CARD_2:cout << 2; break;
+	case  CARD_3:cout << 3; break;
+	case CARD_4: cout << 4; break;
+	case CARD_5: cout << 5; break;
+	case CARD_6: cout << 6; break;
+	case CARD_7: cout << 7; break;
+	case CARD_8: cout << 8; break;
+	case CARD_9: cout << 9; break;
+	case CARD_10: cout << 10; break;
+	case CARD_J: cout << "Ja "; break;
+	case CARD_Q: cout << "Qu "; break;
+	case CARD_K: cout << "Ki "; break;
+	case CARD_A: cout << "A "; break;
+	}
+	switch (m_suit) {
+	case CARD_DIAMONDS:cout << " diamonds, "; break;
+	case  CARD_HEARTS: cout << " hearts, "; break;
+	case CARD_SPADES: cout << " spades, "; break;
+	case  CARD_CLUBS: cout << " clubs, "; break;
+	}
+
 }
 
 int Card::get_score() {
-	int score=0;
-	switch (m_rank){
+	int score = 0;
+	switch (m_rank) {
 	case CARD_2:score += 2; return score;
 	case CARD_3:score += 3; return score;
 	case CARD_4:score += 4; return score;
@@ -63,7 +56,7 @@ int Card::get_score() {
 	case CARD_Q:score += 10; return score;
 	case CARD_K:score += 10; return score;
 	case CARD_A:score += 11; return score;
-}
+	}
 }
 
 Card::CardRank Card::get_rank() {

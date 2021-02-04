@@ -14,12 +14,13 @@ public:
 		GAME_CONTINUE,
 		WIN_,
 		LOOSE_,
-		MAX_STATUS
+		MAX_STATUS,
+		GAME_SKIP
 	};
 	//Hand();
 	void takeOneCard(Deck&);
 	void printHand();
 	unsigned int calculateScore();
 	GameStatus checkGameStatus();
-	int cleanHand(Card&);
+	
 };
