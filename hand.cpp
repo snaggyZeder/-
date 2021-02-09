@@ -32,5 +32,5 @@ Hand::GameStatus Hand::checkGameStatus() {
 	else
 		if (score == 21) { return Hand::WIN_; }
 		else if (score > 21) { return Hand::LOOSE_; }
-		else Hand::GAME_SKIP;
+		
 }
