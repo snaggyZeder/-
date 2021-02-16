@@ -1,5 +1,2 @@
-﻿  game.cpp
-C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(86,52): warning C4804: >: небезопасное использование типа "bool" в операции
-C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(90,52): warning C4804: >: небезопасное использование типа "bool" в операции
-C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\black jsck OOP\game.cpp(94,52): warning C4804: >: небезопасное использование типа "bool" в операции
+﻿  player.cpp
   black jsck OOP.vcxproj -> C:\Users\Asus\OneDrive\Рабочий стол\курсовая\black jsck OOP\Debug\black jsck OOP.exe
