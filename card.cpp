@@ -38,31 +38,39 @@ void Card::print_card() {
 	case  CARD_CLUBS: cout << " clubs, "; break;
 	}
 
+
+
+
+
+
+
 }
 
 int Card::get_score() {
-	int score = 0;
+
 	switch (m_rank) {
-	case CARD_2:score += 2; return score;
-	case CARD_3:score += 3; return score;
-	case CARD_4:score += 4; return score;
-	case CARD_5:score += 5; return score;
-	case CARD_6:score += 6; return score;
-	case CARD_7:score += 7; return score;
-	case CARD_8:score += 8; return score;
-	case CARD_9:score += 9; return score;
-	case CARD_10:score += 10; return score;
-	case CARD_J:score += 10; return score;
-	case CARD_Q:score += 10; return score;
-	case CARD_K:score += 10; return score;
-	case CARD_A:score += 11; return score;
+	case CARD_2: return 2;
+	case CARD_3: return 3;
+	case CARD_4: return 4;
+	case CARD_5: return 5;
+	case CARD_6: return 6;
+	case CARD_7: return 7;
+	case CARD_8: return 8;
+	case CARD_9: return 9;
+	case CARD_10:
+	case CARD_J:
+	case CARD_Q:
+	case CARD_K: return 10;
+	case CARD_A: return 1;
 	}
 }
 
 Card::CardRank Card::get_rank() {
+
 	return m_rank;
 }
 
 Card::CardSuits Card::get_suits() {
+
 	return m_suit;
 }
